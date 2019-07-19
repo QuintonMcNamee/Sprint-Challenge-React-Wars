@@ -31,7 +31,10 @@ const App = () => {
       {people.map( (item, index) =>
         <People
           key={index}
-          propPeople={item.name}
+          propName={item.name}
+          propHeight={item.height}
+          propHairColor={item.hair_color}
+          propEyeColor={item.eye_color}
         />
       )}
     </div>

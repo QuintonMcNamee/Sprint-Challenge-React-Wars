@@ -6,10 +6,14 @@ const PeopleDiv = styled.div`
 
 `;
 
-const People = ({ propPeople }) => {
+const People = ({ propName, propHeight, propHairColor, propEyeColor }) => {
   return (
     <PeopleDiv>
-      <div>{propPeople}</div>
+      <div>{propName}</div>
+      <div>{propHeight} cm</div>
+      <div>{propHairColor}</div>
+      <div>{propEyeColor}</div>
+      <p></p>
     </PeopleDiv>
   );
 };
