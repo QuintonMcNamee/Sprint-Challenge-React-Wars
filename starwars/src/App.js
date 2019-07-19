@@ -28,6 +28,7 @@ const App = () => {
     <div className="App">
       <h1 className="Header">React Wars</h1>
 
+      <div className='cards'>
       {people.map( (item, index) =>
         <People
           key={index}
@@ -37,6 +38,8 @@ const App = () => {
           propEyeColor={item.eye_color}
         />
       )}
+      </div>
+
     </div>
   );
 }
